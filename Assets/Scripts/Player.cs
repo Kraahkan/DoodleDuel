@@ -178,7 +178,7 @@ public class Player : MonoBehaviour {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
-        if (Input.GetKeyDown(KeyCode.F) && isDashing == false)
+        if (Input.GetKeyDown(KeyCode.V) && isDashing == false) // dash
         {
             playerSpeed += extraSpeed;
             isDashing = true;
@@ -199,9 +199,20 @@ public class Player : MonoBehaviour {
         {
             animator.SetBool("grammaSword", true);
         }
+
         if (Input.GetKeyUp(KeyCode.F))
         {
             animator.SetBool("grammaSword", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            animator.SetBool("grammaGun", true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            animator.SetBool("grammaGun", false);
         }
 
 
