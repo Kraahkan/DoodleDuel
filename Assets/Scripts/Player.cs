@@ -19,7 +19,6 @@ public class Player : MonoBehaviour {
 
     public string primaryAttackButton = "f";
 
-
     // INPUT
 
     public string jumpButton = "space";
@@ -28,6 +27,21 @@ public class Player : MonoBehaviour {
     public string rightButton;
     public string shootButton;
     public string interactButton;
+
+    // This gives a slider in the Unity side of thigngs
+    [Range(0, 10000)]
+    public float playerMaxHealth = 50;
+
+    [Range(0, 10000)]
+    private float playerCurrentHealth;
+
+    public int playerArmour = 0;
+
+    // COMBAT
+
+    public float playerDamageMult = 1.0f;
+
+    private bool isDamaged;
 
     // MOVEMENT
 
@@ -57,22 +71,7 @@ public class Player : MonoBehaviour {
     // ATTRIBUTES
 
     public string playerName = "Gramma"; // to be displayed above their head in future?
-    
 
-    // This gives a slider in the Unity side of thigngs
-    [Range(0, 10000)] 
-    public float playerMaxHealth = 50;
-
-    [Range(0, 10000)]
-    private float playerCurrentHealth;
-
-    public int playerArmour = 0;
-
-    // COMBAT
-
-    public float playerDamageMult = 1.0f;
-     
-    private bool isDamaged;
 
     // SOUND
 
@@ -98,6 +97,10 @@ public class Player : MonoBehaviour {
     // AUDIO
 
     public AudioSource hitSound;
+    public AudioSource shootSound;
+    public AudioSource[] combatTaunts;
+
+    int combatTauntIndex = 0;
 
     void Start()  // Start is called before the first frame update
     {
@@ -160,21 +163,42 @@ public class Player : MonoBehaviour {
 
         // ANIMATION
 
+
+        playerActions();
+
+
+        // ACHIEVMENTS
+
+        if (numberOfJumps > 1000)
+        {
+            // achievements!
+        }
+
+        if (playerMaxHealth - playerCurrentHealth < 25)
+        {
+            // Bloodied! bleeding?
+        }
+
+    }
+
+    void playerActions()
+    {
         if (input != 0)
         {
             animator.SetBool("playerIsRunning", true);
         }
-        else { 
+        else
+        {
             animator.SetBool("playerIsRunning", false);
-        } 
+        }
 
         if (input > 0) // right
         {
-            transform.eulerAngles = new Vector3(0,0,0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
 
         if (input < 0) // left
-        { 
+        {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
@@ -207,6 +231,22 @@ public class Player : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.E))
         {
+
+            // Randomize sound, without shotgun style repeat
+
+            shootSound.Play();
+
+            int newCombatTauntIndex = Random.Range(0, combatTaunts.Length);
+
+            while (combatTauntIndex == newCombatTauntIndex)
+                newCombatTauntIndex = Random.Range(0, combatTaunts.Length);
+
+            combatTauntIndex = newCombatTauntIndex;
+
+            combatTaunts[newCombatTauntIndex].PlayDelayed(.05f);
+
+
+            // Play animation
             animator.SetBool("grammaGun", true);
         }
 
@@ -214,21 +254,6 @@ public class Player : MonoBehaviour {
         {
             animator.SetBool("grammaGun", false);
         }
-
-
-
-        // ACHIEVMENTS
-
-        if (numberOfJumps > 1000)
-        {
-            // achievements!
-        }
-
-        if (playerMaxHealth - playerCurrentHealth < 25)
-        {
-            // Bloodied! bleeding?
-        }
-
     }
 
     bool Walk()
