@@ -15,32 +15,19 @@ MonoBehaviour:
   SimpleSelectedItems:
     m_Keys:
     - Assets/Animations/gramma/gramma 1.controller
-    - Assets/Animations/gramma/grammaGun.anim
-    - Assets/Audio/Gramma.meta
-    - Assets/Audio/Gramma/gramma1620773504000-2880.aac
-    - Assets/Audio/Gramma/gramma1620773504000-2880.aac.meta
-    - Assets/Audio/Gramma/gramma1620773504000-2880.mp3
-    - Assets/Audio/Gramma/gramma1620773504000-2880.mp3.meta
-    - Assets/Audio/Gramma/gramma1620773510000-3019.aac
-    - Assets/Audio/Gramma/gramma1620773510000-3019.aac.meta
-    - Assets/Audio/Gramma/gramma1620773510000-3019.mp3
-    - Assets/Audio/Gramma/gramma1620773510000-3019.mp3.meta
-    - Assets/Audio/Gramma/gramma1620773516000-3460.aac
-    - Assets/Audio/Gramma/gramma1620773516000-3460.aac.meta
-    - Assets/Audio/Gramma/gramma1620773516000-3460.mp3
-    - Assets/Audio/Gramma/gramma1620773516000-3460.mp3.meta
-    - Assets/Audio/Gramma/gramma1620773521000-2973.aac
-    - Assets/Audio/Gramma/gramma1620773521000-2973.aac.meta
-    - Assets/Audio/Gramma/gramma1620773521000-2973.mp3
-    - Assets/Audio/Gramma/gramma1620773521000-2973.mp3.meta
-    - Assets/Audio/Gramma/grammaTaunt.mp4
-    - Assets/Audio/Gramma/grammaTaunt.mp4.meta
-    - Assets/Audio/Gramma/shotgun.wav
-    - Assets/Audio/Gramma/shotgun.wav.meta
+    - Assets/Animations/gramma/mrCapController.controller
+    - Assets/Animations/gramma/mrCapController.controller.meta
+    - Assets/Animations/mrcap.meta
+    - Assets/Animations/mrcap/mrCapIdle.anim
+    - Assets/Animations/mrcap/mrCapIdle.anim.meta
+    - Assets/Animations/mrcap/mrCapRun.anim
+    - Assets/Animations/mrcap/mrCapRun.anim.meta
     - Assets/Scenes/sandboxGramma.unity
     - Assets/Scripts/Player.cs
+    - Assets/Sprites/Characters/MrCappuccino.png
+    - Assets/Sprites/Characters/MrCappuccino.png.meta
     - 
-    m_Values: 0000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

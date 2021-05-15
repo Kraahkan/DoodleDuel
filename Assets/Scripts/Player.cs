@@ -6,9 +6,16 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour {
 
 
+    // UI
 
     public Text healthDisplay;
     public GameObject losePanel;
+
+    // ANIMATION
+
+    public string abilityOneAnimation = "";
+    public string abilityTwoAnimation = "";
+    public string movementAnimation = "";
 
     // STATS
 
@@ -181,15 +188,15 @@ public class Player : MonoBehaviour {
 
     }
 
-    void playerActions()
+    void playerActions() // animations, movement, combat (future)
     {
         if (input != 0)
         {
-            animator.SetBool("playerIsRunning", true);
+            animator.SetBool(movementAnimation, true);
         }
         else
         {
-            animator.SetBool("playerIsRunning", false);
+            animator.SetBool(movementAnimation, false);
         }
 
         if (input > 0) // right
@@ -221,12 +228,12 @@ public class Player : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            animator.SetBool("grammaSword", true);
+            animator.SetBool(abilityOneAnimation, true);
         }
 
         if (Input.GetKeyUp(KeyCode.F))
         {
-            animator.SetBool("grammaSword", false);
+            animator.SetBool(abilityOneAnimation, false);
         }
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -247,12 +254,12 @@ public class Player : MonoBehaviour {
 
 
             // Play animation
-            animator.SetBool("grammaGun", true);
+            animator.SetBool(abilityTwoAnimation, true);
         }
 
         if (Input.GetKeyUp(KeyCode.E))
         {
-            animator.SetBool("grammaGun", false);
+            animator.SetBool(abilityTwoAnimation, false);
         }
     }
 
