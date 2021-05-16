@@ -14,20 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Animations/gramma/gramma 1.controller
-    - Assets/Animations/gramma/mrCapController.controller
-    - Assets/Animations/gramma/mrCapController.controller.meta
-    - Assets/Animations/mrcap.meta
     - Assets/Animations/mrcap/mrCapIdle.anim
-    - Assets/Animations/mrcap/mrCapIdle.anim.meta
-    - Assets/Animations/mrcap/mrCapRun.anim
-    - Assets/Animations/mrcap/mrCapRun.anim.meta
-    - Assets/Scenes/sandboxGramma.unity
-    - Assets/Scripts/Player.cs
-    - Assets/Sprites/Characters/MrCappuccino.png
-    - Assets/Sprites/Characters/MrCappuccino.png.meta
     - 
-    m_Values: 00000000000000000000000000
+    m_Values: 0000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
