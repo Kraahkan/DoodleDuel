@@ -642,7 +642,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 3d32b2299e1a8ca428d69e065b90c326, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -666,7 +666,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 10, y: 8.58}
-    newSize: {x: 5.59, y: 10.24}
+    newSize: {x: 22.323927, y: 21.550001}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -709,7 +709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthDisplay: {fileID: 0}
   losePanel: {fileID: 0}
-  abilityOneAnimation: 
+  abilityOneAnimation: capThrowCoffee
   abilityTwoAnimation: 
   movementAnimation: mrCapIsRunning
   primaryAttackButton: f
@@ -781,7 +781,7 @@ SpriteRenderer:
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.59, y: 10.24}
+  m_Size: {x: 22.323927, y: 21.550001}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -796,7 +796,7 @@ Transform:
   m_GameObject: {fileID: 973116080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.76, y: -5.23, z: -9.864405}
-  m_LocalScale: {x: 1.087535, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
