@@ -14,23 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Animations/controllers.meta
-    - Assets/Animations/controllers/gramma 1.controller
-    - Assets/Animations/controllers/gramma 1.controller.meta
-    - Assets/Animations/controllers/gramma.controller
-    - Assets/Animations/controllers/gramma.controller.meta
-    - Assets/Animations/controllers/mrCapController.controller
-    - Assets/Animations/controllers/mrCapController.controller.meta
-    - Assets/Animations/mrcap/mrCapAttack.anim
-    - Assets/Animations/mrcap/mrCapAttack.anim.meta
-    - Assets/Sprites/Characters/mrCapAttack1.png
-    - Assets/Sprites/Characters/mrCapAttack1.png.meta
-    - Assets/Sprites/Characters/mrCapAttack2.png
-    - Assets/Sprites/Characters/mrCapAttack2.png.meta
+    - Assets/Animations/mrcap/mrCapIdle.anim
+    - Assets/Animations/mrcap/mrCapRun.anim
+    - Assets/Physics.meta
+    - Assets/Physics/Slippery.physicsMaterial2D
+    - Assets/Physics/Slippery.physicsMaterial2D.meta
+    - Assets/Scenes/sandboxGramma.unity
+    - Assets/Sprites/Characters/MrCappuccino.png.meta
+    - Assets/Sprites/Characters/grannysShoot.png.meta
     - 
-    m_Values: 0101010101010101010101010101
+    m_Values: 010101010101010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
-  TabIndex: 0
+  TabIndex: 1
