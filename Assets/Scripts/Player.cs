@@ -199,6 +199,8 @@ public class Player : MonoBehaviour {
             animator.SetBool(movementAnimation, false);
         }
 
+        
+
         if (input > 0) // right
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
@@ -208,6 +210,8 @@ public class Player : MonoBehaviour {
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
+
+        
 
         if (Input.GetKeyDown(KeyCode.V) && isDashing == false) // dash
         {
@@ -263,10 +267,12 @@ public class Player : MonoBehaviour {
         }
     }
 
+    
     bool Walk()
     {
         return false;
     }
+    
 
 
     bool Shoot()
@@ -304,11 +310,12 @@ public class Player : MonoBehaviour {
             return false;
     }
 
-
+    
     bool Jump()
     {
         return false;
     }
+    
 
 
     void PlaySound(string soundName)

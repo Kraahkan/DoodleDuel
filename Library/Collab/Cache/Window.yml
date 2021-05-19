@@ -14,17 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Animations/mrcap/mrCapIdle.anim
-    - Assets/Animations/mrcap/mrCapRun.anim
-    - Assets/Physics.meta
-    - Assets/Physics/Slippery.physicsMaterial2D
-    - Assets/Physics/Slippery.physicsMaterial2D.meta
+    - Assets/Animations/controllers/mrCapController.controller
+    - Assets/Animations/mrcap/mrCapAttack.anim
     - Assets/Scenes/sandboxGramma.unity
-    - Assets/Sprites/Characters/MrCappuccino.png.meta
-    - Assets/Sprites/Characters/grannysShoot.png.meta
+    - Assets/Scripts/CharacterController2D.cs
+    - Assets/Scripts/CharacterController2D.cs.meta
+    - Assets/Scripts/CustomGravity.cs
+    - Assets/Scripts/CustomGravity.cs.meta
+    - Assets/Scripts/MrCapp_Movement.cs
+    - Assets/Scripts/MrCapp_Movement.cs.meta
+    - Assets/Scripts/Player.cs
+    - ProjectSettings/InputManager.asset
     - 
-    m_Values: 010101010101010101
-  RevisionSummary: 
+    m_Values: 010101000000000000000000
+  RevisionSummary: Created prototype level, fixed some bugs with animation, added
+    physics to level platforms and players, organized scene.
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
