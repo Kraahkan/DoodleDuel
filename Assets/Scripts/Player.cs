@@ -230,17 +230,17 @@ public class Player : MonoBehaviour {
             dashTime -= Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Keypad0))
         {
             animator.SetBool(abilityOneAnimation, true);
         }
 
-        if (Input.GetKeyUp(KeyCode.F))
+        if (Input.GetKeyUp(KeyCode.Keypad0))
         {
             animator.SetBool(abilityOneAnimation, false);
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Keypad1))
         {
 
             // Randomize sound, without shotgun style repeat
@@ -261,7 +261,7 @@ public class Player : MonoBehaviour {
             animator.SetBool(abilityTwoAnimation, true);
         }
 
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.Keypad1))
         {
             animator.SetBool(abilityTwoAnimation, false);
         }

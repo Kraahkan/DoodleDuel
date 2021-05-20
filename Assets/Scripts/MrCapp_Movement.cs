@@ -47,7 +47,7 @@ public class MrCapp_Movement : MonoBehaviour
             //SoundManagerScript.PlaySound("jump");
         }
 
-        //crouch
+        //Crouch
         if (Input.GetButtonDown("Capp_Crouch"))
         {
             crouch = true;
@@ -55,6 +55,17 @@ public class MrCapp_Movement : MonoBehaviour
         } else if (Input.GetButtonUp("Capp_Crouch"))
         {
             crouch = false;
+        }
+
+        //Attack
+        if (Input.GetButtonDown("Capp_Attack"))
+        {
+            animator.SetBool("CapThrowCoffee", true);
+
+        }
+        else if (Input.GetButtonUp("Capp_Attack"))
+        {
+            animator.SetBool("CapThrowCoffee", false);
         }
 
         /*
