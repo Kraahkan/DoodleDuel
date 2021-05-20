@@ -454,9 +454,9 @@ GameObject:
   - component: {fileID: 973116090}
   - component: {fileID: 973116088}
   - component: {fileID: 973116087}
-  - component: {fileID: 973116086}
   - component: {fileID: 973116092}
   - component: {fileID: 973116089}
+  - component: {fileID: 973116081}
   m_Layer: 0
   m_Name: mrCap
   m_TagString: Player
@@ -464,7 +464,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &973116086
+--- !u!95 &973116081
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -638,8 +638,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 973116089}
-  animator: {fileID: 973116086}
+  animator: {fileID: 973116081}
   runSpeed: 500
+  abilityOneAnimation: mrCapAttack
 --- !u!1 &1299864933
 GameObject:
   m_ObjectHideFlags: 0

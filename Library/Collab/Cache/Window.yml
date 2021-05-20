@@ -15,7 +15,12 @@ MonoBehaviour:
   SimpleSelectedItems:
     m_Keys:
     - Assets/Animations/controllers/mrCapController.controller
-    - Assets/Animations/mrcap/mrCapAttack.anim
+    - Assets/Animations/mrcap/CapAttack.anim
+    - Assets/Animations/mrcap/CapAttack.anim.meta
+    - Assets/Animations/mrcap/CapIdle.anim
+    - Assets/Animations/mrcap/CapIdle.anim.meta
+    - Assets/Animations/mrcap/CapRun.anim
+    - Assets/Animations/mrcap/CapRun.anim.meta
     - Assets/Scenes/sandboxGramma.unity
     - Assets/Scripts/CharacterController2D.cs
     - Assets/Scripts/CharacterController2D.cs.meta
@@ -26,10 +31,9 @@ MonoBehaviour:
     - Assets/Scripts/Player.cs
     - ProjectSettings/InputManager.asset
     - 
-    m_Values: 010101000000000000000000
-  RevisionSummary: Created prototype level, fixed some bugs with animation, added
-    physics to level platforms and players, organized scene.
+    m_Values: 0000000000000000000000000000000000
+  RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
-  TabIndex: 1
+  TabIndex: 0
